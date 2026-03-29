@@ -3,27 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thunderbird Marketplace</title>
+    <title>THUNDER BIRD | Digital Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <img src="logo.png" alt="Logo" style="width:100px;height:auto;">
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+<body class="bg-gray-900 text-white font-sans">
+
+    <nav class="p-6 flex justify-between items-center border-b border-gray-800">
+        <h1 class="text-2xl font-bold tracking-tighter text-yellow-500">THUNDER BIRD</h1>
+        <div class="space-x-6">
+            <a href="#" class="hover:text-yellow-400">Shop</a>
+            <a href="#" class="hover:text-yellow-400">Upload</a>
+            <a href="#" class="bg-yellow-600 px-4 py-2 rounded-lg font-bold">Cart (0)</a>
+        </div>
+    </nav>
+
+    <header class="py-20 text-center">
+        <h2 class="text-5xl font-extrabold mb-4">Premium Digital Assets</h2>
+        <p class="text-gray-400 text-xl">High-performance tools for your next big project.</p>
     </header>
-    <main>
-        <h1><img src="logo.png" alt="Logo" style="width:100px;height:auto;"></h1>
-        <p>Welcome to the Thunderbird Marketplace!</p>
-        <p>Your source for amazing products.</p>
+
+    <main class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-4 rounded-xl border border-gray-700 hover:border-yellow-500 transition">
+            <div class="h-48 bg-gray-700 rounded-lg mb-4 flex items-center justify-center text-gray-500">Preview Image</div>
+            <h3 class="text-xl font-bold">Digital Asset Alpha</h3>
+            <p class="text-gray-400 text-sm mb-4">A high-resolution template for creators.</p>
+            <div class="flex justify-between items-center">
+                <span class="text-yellow-500 font-bold">$29.00</span>
+                <button class="bg-white text-black px-4 py-1 rounded font-medium">Add to Cart</button>
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2026 Thunderbird Marketplace. All rights reserved.</p>
-    </footer>
+
+    <section class="max-w-2xl mx-auto my-20 p-8 bg-gray-800 rounded-2xl shadow-2xl">
+        <h3 class="text-2xl font-bold mb-6 border-b border-gray-700 pb-2">Vendor Upload Portal</h3>
+        <div class="space-y-4">
+            <div>
+                <label class="block text-sm text-gray-400 mb-1">Product Name</label>
+                <input type="text" placeholder="e.g. Master Graphics Pack" class="w-full bg-gray-900 border border-gray-700 p-2 rounded focus:outline-none focus:border-yellow-500">
+            </div>
+            <div>
+                <label class="block text-sm text-gray-400 mb-1">Price ($)</label>
+                <input type="number" placeholder="19.99" class="w-full bg-gray-900 border border-gray-700 p-2 rounded focus:outline-none focus:border-yellow-500">
+            </div>
+            <div>
+                <label class="block text-sm text-gray-400 mb-1">Upload Digital File</label>
+                <input type="file" class="block w-full text-sm text-gray-400 file:mr-4 file:py-2 file:px-4 file:rounded file:border-0 file:bg-yellow-600 file:text-white hover:file:bg-yellow-700">
+            </div>
+            <button class="w-full bg-yellow-500 text-black font-bold py-3 rounded-lg mt-4 hover:bg-yellow-400 transition">Publish Product</button>
+        </div>
+    </section>
+
 </body>
 </html>
